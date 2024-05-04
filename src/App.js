@@ -128,7 +128,7 @@ function App() {
     if (timer > 0 && !paused) {
       interval = setInterval(() => {
         setTimer((timer) => timer - 1);
-      }, 100);
+      }, 1000);
     } else if (timer === 0 && !paused) {
       const currentIndex = items.findIndex(
         (item) => item.id === currentItem.id
